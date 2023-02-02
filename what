@@ -1,3 +1,4 @@
-preview
-now
-cha
+int main()
+{
+  return 0;
+}
