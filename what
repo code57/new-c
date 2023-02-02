@@ -1,7 +1,35 @@
-#include <studio.h>
+//int main()                //函数返回类型 与 函数名
+//{
+//	char ch = 'a';//字符数据类型  char 字符类型 short 短整型 int 整型 long 长整型 float 单精度浮点数 double 双
+//	int age = 20;
+//	short num = 10;
+//	float weight = 55.5;
+//	double d = 0.0;
+//	printf("helloworld\n");  //printf 输出
+//	printf("%d\n", 25);
+//	printf("%d\n", sizeof(char));//sizeof 关键字 操作符 计算类型或者变量所占空间大小 单位是byte字节
+//	return 0;
+//}                         //函数体 
 
+int age = 10;//{}外为全局变量
+//int main()
+//{
+//	int age = 25;//在{}内定义的变量为局部变量
+//	double weight = 74.5;
+//	age = age + 1;
+//	weight = weight - 10;
+//	printf("%d\n", age);
+//	printf("%1f\n", weight);
+//	return 0;
+//
+//}
+//	 
 int main()
 {
-        printf("helloworld");
+	int a = 0;
+	int b = 0;
+	int sum = 0;
+	scanf("%d %d",&a,&b);
+	sum=a + b;
+	printf("sum = % d\n",sum);
 	return 0;
-}
