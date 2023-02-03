@@ -1,0 +1,6 @@
+int main()//使用ASCII码表
+{
+	printf("%c\n", '\x30');
+
+	return 0;
+}
