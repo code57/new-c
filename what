@@ -1,4 +1,6 @@
-//int main()                //函数返回类型 与 函数名
+#include <stdio.h>
+
+//int main()                //数据存储与输出
 //{
 //	char ch = 'a';//字符数据类型  char 字符类型 short 短整型 int 整型 long 长整型 float 单精度浮点数 double 双
 //	int age = 20;
@@ -11,7 +13,7 @@
 //	return 0;
 //}                         //函数体 
 
-int age = 10;//{}外为全局变量
+//int age = 10;//{}外为全局变量   全局变量与局部变量的认识
 //int main()
 //{
 //	int age = 25;//在{}内定义的变量为局部变量
@@ -24,12 +26,19 @@ int age = 10;//{}外为全局变量
 //
 //}
 //	 
-int main()
-{
-	int a = 0;
-	int b = 0;
-	int sum = 0;
-	scanf("%d %d",&a,&b);
-	sum=a + b;
-	printf("sum = % d\n",sum);
-	return 0;
+
+
+
+//int main()  数据的输入与加和
+//{
+//	int a = 0;
+//	int b = 0;
+//	int sum = 0;
+//	scanf("%d %d",&a,&b);
+//	sum=a + b;
+//	printf("sum = % d\n",sum);
+//	return 0;
+//
+//
+//
+//}
