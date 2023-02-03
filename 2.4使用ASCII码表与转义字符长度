@@ -1,6 +1,6 @@
 int main()//使用ASCII码表
 {
 	printf("%c\n", '\x30');
-
+	printf("%d\n", strlen("c:\test\328\test.c"));
 	return 0;
 }
