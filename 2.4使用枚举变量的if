@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()//使用枚举变量作为if判断的主体
+
+{
+	enum a { y, n };
+	char b = 'y';
+	printf("你会好好学习吗？\n");
+	enum a answer = y;
+	scanf("%c", &answer);
+	if (answer == y)
+		printf("成功\n");
+	else if(answer == n)
+		printf("失败\n");
+	else
+		printf("请输入正确回答\n");
+	return 0;
+}
