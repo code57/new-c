@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()//while循环使用
+{
+	int number = 0;
+	while (number<5)
+	{
+		printf("加一后结果是:%d\n",number);
+		number++;
+	}
+	if (number == 5)
+	{
+		printf("加满了\n");
+	}
+	return 0;
+}
