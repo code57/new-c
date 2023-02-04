@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int MH(int x, int y)//函数的使用
+{
+	int z = 0;
+	z = x * y;
+	return z;    //函数需要有返回值
+}
+int main()
+{
+	int num1 = 0;
+	int num2 = 0;
+	scanf("%d%d", &num1, &num2);
+	int sum = MH(num1, num2);
+	printf("%d\n", sum);
+	
+	return 0;
+}
