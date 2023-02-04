@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+	char a='y';
+	printf("你会努力编程吗(y/n)?\n");
+	scanf("%c", &a);
+	if (a == 'y')
+		printf("你会成功\n");
+	else if (a == 'n')
+		printf("你会失败\n");
+	else
+		printf("请输入正确的回答\n");
+	return 0;
+}
