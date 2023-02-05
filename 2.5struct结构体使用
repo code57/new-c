@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+struct legend
+{
+	char name[20];
+	float cd;
+};
+
+int main()
+{
+	struct legend oct = { "动力小子",2.0 };
+	printf("%s\n%f", oct.name, oct.cd);//输出struct结构体的几种方式
+	struct legend* dz = &oct;
+	printf("%s\n%f", (*dz).name,(*dz).cd);
+	printf("%s\n%f", dz->name, dz->cd);
+
+	return 0;
+}
