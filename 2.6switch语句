@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()//switch的使用
+{
+	char day = 'a';
+	scanf("%c", &day);
+	switch (day)
+	{
+	case 'a':
+		printf("星期一\n");
+		break;
+	case 'b':
+		printf("星期二\n");
+		break;
+	default:
+		printf("输入错误");
+		break;
+	}
+	return 0;
+}
