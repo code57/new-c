@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()//利用if和for输出1到100之间的奇数
+{
+	int i = 1;
+	for (i = 1; i < 101; i++)
+		if (i % 2 == 1)
+		{
+			printf("%d ", i);
+		}//若无括号，则视return为else内容，导致程序结束
+	return 0;
+}
