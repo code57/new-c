@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()//判断输入能否被5整除
+{
+	int a = 0;
+	scanf("%d", &a);
+	if (a % 5 == 0)
+		printf("YES");
+	else
+		printf("NO");
+	return 0;
+}
