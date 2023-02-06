@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+	int a = 0;
+	int b = 0;
+	scanf("%d", &b);
+	int cle = 0;
+	while (cle = getchar() != '\n')//清除缓冲区
+	{
+		;
+	}
+	int c = getchar();
+	putchar(c);
+	return 0;
+}
