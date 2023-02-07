@@ -1,0 +1,31 @@
+include <stdio.h>
+int main()//求1!+2!+3!+...+10!
+{
+	int n = 1;
+	int i = 0;
+	
+	int sum = 0;
+	
+	while (n <11)
+	{
+		int j = 1;//需要将其初始为1
+		for (i = 1; i <= n; i++)
+		{
+			j = j * i;
+		}
+		n++;
+		sum = sum + j;
+	}
+	printf("结果是%d\n", sum);
+	//减少计算量的改进如下
+	int x = 0;
+	int a = 1;
+	int sum2 = 0;
+	for (x = 1; x < 11; x++)//思路没计算出阶乘就加上并利用其继续计算
+	{
+		a *= x;
+		sum2 += a;
+	}
+	printf("改进后结果是%d\n", sum2);
+	return 0;
+}
