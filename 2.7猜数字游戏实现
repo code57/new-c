@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <time.h>
+
+//猜数字游戏
+void menu()
+{
+	printf("*******猜数字*********\n");
+	printf("******1.开始游戏******\n");
+	printf("******2.退出游戏******\n");
+	printf("**********************\n");
+}
+void game()
+{
+	int num = rand() % 100 + 1;
+	int b = 0;
+	
+	do
+	{
+		scanf("%d", &b);
+		if (b < num)
+			printf("小了\n");
+		else if (b > num)
+			printf("大了\n");
+		else
+		{
+			printf("对了\n");
+			break;
+		}
+	} while (1);
+}
+int main()
+{
+	int a = 0;
+	srand((unsigned int)time(NULL));//使用rand的前置，改变rand输出
+	do
+	{
+		menu();//打印菜单
+		scanf("%d", &a);
+		switch (a)
+		{
+		case 1:
+			game();
+			break;
+		case 2:
+			printf("退出游戏");
+			break;
+		default:
+			printf("输入错误");
+			break;
+		}
+	} while (a != 2);
+	return 0;
+}
