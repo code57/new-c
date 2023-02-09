@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void v(int* pa)//利用传址调用实现每调用一次函数num值就加一
+{
+	*pa=*pa+1;
+}
+int main()
+{
+	int i = 0;
+	int a = 1;
+	int num = 0;
+	scanf("%d", &i);
+	while (a <= i)
+	{
+		v(&num);
+		a++;
+	}
+	printf("运行次数为%d\n", num);
+	return 0;
+}
