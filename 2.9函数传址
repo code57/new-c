@@ -12,7 +12,7 @@ int main()
 	scanf("%d", &i);
 	while (a <= i)
 	{
-		v(&num);
+		v(&num);//利用&进行地址操作
 		a++;
 	}
 	printf("运行次数为%d\n", num);
