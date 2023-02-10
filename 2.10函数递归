@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+//利用递归求阶乘
+int jie(int num)
+{
+	if (num !=1)
+	{
+		return num *( jie(num - 1));
+	}
+	else
+	{
+		return 1;
+	}
+}
+int main()
+{
+	int a = 0;
+	scanf("%d", &a);
+	printf("阶乘是%d\n", jie(a));
+	return 0;
+}
+
+
+//利用递归输出每一位的值
+void pt(int n)
+{
+	if (n > 9)
+	{
+		pt(n / 10);
+	}
+		printf("%d ", (n % 10));
+	
+}
+
+int main()
+	{
+	int i = 0;
+	scanf("%d", &i);
+	pt(i);
+	return 0;
+	}
