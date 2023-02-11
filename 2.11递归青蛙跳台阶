@@ -1,0 +1,24 @@
+include# <stdio.h>
+
+int wa(int n)//青蛙跳台阶
+{
+
+	if (1==n)
+	{
+		return 1;
+	}
+	if (2==n)
+	{
+		return 2;
+	}
+	return (wa(n - 1) + wa(n - 2));
+	
+
+}
+int main()
+{
+	int n = 0;
+	scanf("%d", &n);
+	printf("%d", wa(n));
+	return 0;
+}
