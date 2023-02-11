@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int my_s(char* str)//实现求字符串长度
+{
+	int num = 0;
+	while (*str != '\0')
+	{
+		num++;
+		str++;
+	}
+	return num;
+}
+
+void reverse(char* str)//递归实现逆序
+{
+	char tmp = *str;
+	int len = my_s(str);
+	*str = *(str + len - 1);
+	*(str + len - 1) = '\0';
+	if(my_s(str+1)>=2)
+	{
+		reverse(str + 1);
+	}
+	*(str + len - 1) = tmp;
+
+}
+
+int main()
+{
+	char arr[] = "ABCdefg";
+	printf("%d\n",my_s(arr));
+	reverse(arr);
+	printf("%s", arr);
+	return 0;
+}
