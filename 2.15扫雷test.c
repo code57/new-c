@@ -27,6 +27,7 @@ void game1()
 		printf("请输入扫雷坐标:>");
 		scanf("%d%d", &m, &n);
 		ret = open(board1, board2, m - 1, n - 1);
+		system("cls");
 		displayboard(board2, ROW, COL);//?????
 		printf("\n");
 		/*displayboard(board1, ROW, COL);*/
