@@ -34,11 +34,11 @@ void game3()
 			break;
 		}
 	}
-	if (ret = '*')
+	if (ret == '*')
 	{
 		printf("玩家赢了\n");
 	}
-	else if (ret = '#')
+	else if (ret == '#')
 	{
 		printf("电脑赢了\n");
 	}
