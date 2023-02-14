@@ -79,13 +79,12 @@ void playermove(char board[ROW][COL], int row, int col)
 
 void computermove(char board[ROW][COL], int row, int col)
 {
-	printf("电脑移动\n");//此处判断有问题
+	printf("电脑移动\n");
 	while(1)
 	{
 		int num1 = rand() % row;
 		int num2 = rand() % col;
-		if (board[num1][num2]==' ');//判断语句问题
-		{
+		if (board[num1][num2]==' ')
 			board[num1][num2] = '#';
 			break;
 		}
