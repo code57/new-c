@@ -130,7 +130,7 @@ int open(char board1[ROW][COL], char board2[ROW][COL], int row, int col)
 		}
 	}
 	mn++;
-	if (mn == ROW * COL - CUNT+1)
+	if (mn == ROW * COL - CUNT)
 	{
 		return 2;
 	}
