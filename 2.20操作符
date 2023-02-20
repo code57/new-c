@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()//操作符的理解
+{
+	int a = 1;
+	int b = 2;
+	int c = -1;
+	int a1 = a >> 1;
+	int b1 = b >> 1;
+	int c1 = c >> 1;
+	int aa = a << 1;
+	int bb = b << 1;
+	int cc = c << 1;
+	printf("原数字\t>>1\t<<1\n");
+	printf("%d\t%d\t%d\n%d\t%d\t%d\n%d\t%d\t%d\n",a,a1,aa,b,b1,bb,c,c1,cc);
+	return 0;
+}
+
+int main()//不引入变量交换数据的值
+{
+	int a = 3;
+	int b = 5;
+	a = a ^ b;
+	b = a ^ b;
+	a = a ^ b;
+	printf("%d %d", a, b);
+	return 0;
+}
