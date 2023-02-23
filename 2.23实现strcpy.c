@@ -27,13 +27,16 @@ void my_cpy2(char* a, char* b)//自定义函数实现strcpy,更简洁，效果�
 	*a = *b;
 }
 
-void my_cpy3(char* a, const char* b)//更简洁，效果相同//const防止b被赋值
+char * my_cpy3(char* a, const char* b)//更简洁，效果相同//const防止b被赋值
 {
 	assert(a != NULL && b != NULL);//断言防止对空指针进行运算，需要引用头文件
+	char* ret = a;
 	while (*a++ = *b++)
 	{
 		;
 	}
+	return ret;//返回值为首元素地址
+
 }
 
 int main()
@@ -41,7 +44,7 @@ int main()
 	char arr1[] = "adadadadwads";
 	char arr2[] = "apex";
 	printf("%s ", arr1);
-	my_cpy3(arr1, arr2);//可使用my_str1 my_str2 my_str3
+	printf("%s ", my_cpy3(arr1, arr2));//可使用my_str1 my_str2 my_str3
 	printf("%s ", arr2);
 	printf("%s ", arr1);
 	return 0;
