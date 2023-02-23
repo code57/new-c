@@ -27,8 +27,9 @@ void my_cpy2(char* a, char* b)//自定义函数实现strcpy,更简洁，效果�
 	*a = *b;
 }
 
-void my_cpy3(char* a, char* b)//更简洁，效果相同
+void my_cpy3(char* a, const char* b)//更简洁，效果相同//const防止b被赋值
 {
+	assert(a != NULL && b != NULL);//断言防止对空指针进行运算，需要引用头文件
 	while (*a++ = *b++)
 	{
 		;
