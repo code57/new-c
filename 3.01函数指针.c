@@ -27,7 +27,7 @@ void menu()
 
 int main()
 {
-	int(*pf[5])  (int, int) = { 0,add,sub,mul,div };
+	int(*pf[5])  (int, int) = { NULL,add,sub,mul,div };
 	int input = 0;
 	do
 	{
