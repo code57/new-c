@@ -27,16 +27,24 @@ void menu()
 
 int main()
 {
-	int(*pf[5])  (int, int) = { NULL,add,sub,mul,div };
+	int(*pf[5])  (int, int) = { NULL,add,sub,mul,div };//利用空指针使input与实际函数对应
 	int input = 0;
 	do
 	{
 		int x, y;
 		menu();
 		scanf("%d", &input);
-		printf("请输入两个数字");
-		scanf("%d%d", &x, &y);
-		printf("%d\n", pf[input](x, y));
-	} while (input);
+		if(input>0&&input<5)
+		{
+			printf("请输入两个数字");
+			scanf("%d%d", &x, &y);
+			printf("%d\n", pf[input](x, y));
+		} 
+		if(input>5)
+		{
+			printf("非法输入，请重新输入\n");
+		}
+	}while (input);
 	return 0;
+
 }
