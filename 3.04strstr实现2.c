@@ -4,7 +4,12 @@ char* mystr(const char* str1, const char* str2)//实现strstr
 	assert(str1 && str2);
 	const char* s1 = str1;
 	const char* s2 = str2;
-	char* cp = str1;
+	const char* cp = str1;
+	if (*str2 == '\0')//若str2为空字符串，返回str1
+	{
+		return (char*)str1;
+	}
+
 	while (*cp)
 	{
 		s1 = cp;
@@ -17,7 +22,7 @@ char* mystr(const char* str1, const char* str2)//实现strstr
 		if (*s1 == '\0' && *s2 == '\0')
 		{
 			printf("%p\n", cp);
-			return cp;
+			return (char*)cp;
 		}
 		cp++;
 	}
